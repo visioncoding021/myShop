@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kahanis",
+  "info": {
+    "singularName": "kahani",
+    "pluralName": "kahanis",
+    "displayName": "kahani",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "storyline": {
+      "type": "text",
+      "required": true
+    },
+    "author": {
+      "type": "string",
+      "required": true
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "view": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

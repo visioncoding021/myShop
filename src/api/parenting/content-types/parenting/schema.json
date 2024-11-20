@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "parentings",
+  "info": {
+    "singularName": "parenting",
+    "pluralName": "parentings",
+    "displayName": "parenting",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "view": {
+      "type": "integer",
+      "default": 0,
+      "min": 0
+    },
+    "titleHindi": {
+      "type": "string",
+      "required": true
+    },
+    "descriptionHindi": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
